@@ -1,0 +1,30 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Heart Loading Animation -->
+  
+  <!-- Heart shape -->
+  <path d="M100,180 C100,180 20,120 20,80 C20,50 50,20 100,20 C150,20 180,50 180,80 C180,120 100,180 100,180 Z" fill="none" stroke="#FF00FF" stroke-width="6" stroke-linecap="round">
+    <animate attributeName="stroke-dasharray" values="0,400;200,200;0,400" dur="3s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Inner heart -->
+  <path d="M100,160 C100,160 40,110 40,80 C40,60 60,40 100,40 C140,40 160,60 160,80 C160,110 100,160 100,160 Z" fill="none" stroke="#00FFFF" stroke-width="4" stroke-linecap="round">
+    <animate attributeName="stroke-dasharray" values="400,0;200,200;400,0" dur="2.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Pulsing center -->
+  <circle cx="100" cy="100" r="8" fill="#FF6600">
+    <animate attributeName="r" values="8;15;8" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Sparkles -->
+  <g opacity="0.8">
+    <path d="M100,20 L100,10 M100,30 L100,40 M90,25 L80,25 M110,25 L120,25" stroke="#00FFFF" stroke-width="2">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M100,180 L100,190 M100,170 L100,160 M90,175 L80,175 M110,175 L120,175" stroke="#FF00FF" stroke-width="2">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
+

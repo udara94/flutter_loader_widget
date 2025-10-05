@@ -1,0 +1,21 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Loading Spinner SVG -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#00FFFF" stroke-width="8" stroke-linecap="round" stroke-dasharray="125.6" stroke-dashoffset="125.6">
+    <animate attributeName="stroke-dashoffset" values="125.6;0;125.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Inner rotating dots -->
+  <circle cx="100" cy="20" r="6" fill="#FF00FF">
+    <animateTransform attributeName="transform" type="rotate" values="0 100 100;360 100 100" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="20" r="4" fill="#00FFFF">
+    <animateTransform attributeName="transform" type="rotate" values="360 100 100;0 100 100" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Center pulsing circle -->
+  <circle cx="100" cy="100" r="15" fill="#FF6600">
+    <animate attributeName="r" values="15;25;15" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.5;1" dur="1s" repeatCount="indefinite"/>
+  </circle>
+</svg>
+

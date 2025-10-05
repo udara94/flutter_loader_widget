@@ -1,0 +1,26 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Geometric Loading Pattern -->
+  
+  <!-- Outer hexagon -->
+  <polygon points="100,20 160,60 160,140 100,180 40,140 40,60" fill="none" stroke="#00FFFF" stroke-width="4" stroke-linecap="round">
+    <animate attributeName="stroke-dasharray" values="0,300;150,150;0,300" dur="3s" repeatCount="indefinite"/>
+  </polygon>
+  
+  <!-- Middle hexagon -->
+  <polygon points="100,40 140,70 140,130 100,160 60,130 60,70" fill="none" stroke="#FF00FF" stroke-width="3" stroke-linecap="round">
+    <animate attributeName="stroke-dasharray" values="0,240;120,120;0,240" dur="2.5s" repeatCount="indefinite"/>
+  </polygon>
+  
+  <!-- Inner hexagon -->
+  <polygon points="100,60 120,80 120,120 100,140 80,120 80,80" fill="none" stroke="#FF6600" stroke-width="2" stroke-linecap="round">
+    <animate attributeName="stroke-dasharray" values="0,120;60,60;0,120" dur="2s" repeatCount="indefinite"/>
+  </polygon>
+  
+  <!-- Center rotating element -->
+  <g transform-origin="100 100">
+    <rect x="95" y="95" width="10" height="10" fill="#00FFFF" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" values="0 100 100;360 100 100" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
+
